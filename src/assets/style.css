@@ -1,0 +1,151 @@
+:root{
+    --dark: #121212;
+    --dark-2: #d7ceb2a1;
+    --gray: #a59e8c;
+    --light: #f2f2f2;
+    --bg-base: rgb(23,133,122);
+    --bg-gradiente-a:rgb(23,133,122,1);
+    --bg-gradiente-b: rgb(255,112,166,1);
+
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.player-container{
+    width: 100%;
+    height: 90vh;
+    background: var(--gray);
+    color:var(--dark);
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.control-container{
+    width: 100vw;
+    height: 100px;
+    background:var(--dark);
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    flex-direction: row;
+}
+.audio{
+    width: 100px;
+    height: 100px;
+}
+.buttons-container{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-button{
+    background:transparent;
+    border:none;
+    margin: 0 10px;
+}
+.icone-button{
+    width: 16px;
+    height: 16px;
+}
+.header-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.header-back{
+    background:var(--bg-base);
+    background:linear-gradient(302deg,var(--bg-gradiente-a)0%,var(--bg-gradiente-b)100%);
+    width: 100vw;
+    height: 250px;
+    z-index: 1;
+
+}
+.header-info{
+    width: 90%;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+    margin-top: -120px;
+}
+.header-album{
+    width: 200px;
+    height: 150px;
+}
+.info{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+ h3{
+    font-size: 2em;
+}
+h6{
+    font-size: 1em;
+}
+.music-container{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-2);
+    margin: 10px 5vw;
+    cursor:pointer;
+    
+}
+.music-album{
+    width: 64px;
+    height: 64px;
+}
+.music-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition:0.5s;
+}
+.music-info:hover{
+    background: var(--dark);
+}
+.music-name{
+    display:flex;
+    flex:1;
+    flex-direction: row;
+    margin:0 10px;
+    
+}
+
+.music-name h6{
+    font-weight: 100;
+}
+.button-like{
+    background:transparent;
+    border: none;
+    margin-right: 20px;
+}
+.like{
+    width: 24px;
+    height: 24px;
+}
